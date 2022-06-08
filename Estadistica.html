@@ -1,0 +1,124 @@
+<script>
+
+var edad;
+var sexo, masculino, femenino, estudios;
+
+//Contador de Sexos
+contm=0
+contf=0
+
+//Contador estudios
+contP=0
+contS=0
+contN=0
+
+//Contador de Edad
+cont16=0
+cont17=0
+cont18=0
+cont19=0
+cont20=0
+cont21=0
+cont22=0
+cont23=0
+cont24=0
+cont2529=0
+cont3034=0
+cont3539=0
+cont4044=0
+cont4549=0
+cont5054=0
+cont55=0
+	
+total=0
+
+
+do {
+    sexo = prompt ("Ingrese el Sexo");
+    if (sexo=="n") {
+        break;
+    }
+    edad = parseInt(prompt ("Ingrese la Edad"));
+    estudios = prompt ("Ingrese Nivel de Estudio");
+
+    if (sexo == "m") {
+        contm++
+		total++
+    } else if (sexo == "f") {
+        contf++
+		total++
+    }
+
+    if (estudios == "p") {
+        contP++
+    }else if (estudios == "s") {
+        contS++
+    }else if (estudios == "n") {
+        contN++
+    }
+
+    if (edad==16) {
+        cont16++
+    }else if (edad===17) {
+        cont17++
+    }else if (edad==18) {
+        cont18++
+    }else if (edad==19) {
+        cont19++
+    }else if (edad==20) {
+        cont20++
+    }else if (edad==21) {
+        cont21++
+    }else if (edad==22) {
+        cont22++
+    }else if (edad==23) {
+        cont23++
+    }else if (edad==24) {
+        cont24++
+    }else if (edad>=25 && edad<=29) {
+        cont2529++
+    }else if (edad>=30 && edad<=34) {
+        cont3034++
+    }else if (edad>=35 && edad<=39) {
+        cont3539++
+    }else if (edad>=40 && edad<=44) {
+        cont4044++
+    }else if (edad>=45 && edad<=49) {
+        cont4549++
+    }else if (edad>=50 && edad<=54) {
+        cont5054++
+    }else if (edad>=55) {
+        cont55++
+    }
+
+} while (sexo!="n");
+
+//Resultados de Sexos
+document.write("La cantidad de Masculino son: ", contm, "<br>");
+document.write("La cantidad de Femenino son: ", contf, "<br>");
+document.write("La cantidad de Total son: ", total, "<br>");
+
+//Resultados de Estudios
+document.write("La cantidad de Alumnos con Estudios Primarios son: ", contP, "<br>");
+document.write("La cantidad de Alumnos con Estudios Secundarios son: ", contS, "<br>");
+document.write("La cantidad de Alumnos sin Estudios son: ", contN, "<br>");
+
+//Resultados de Edades
+document.write("De 16 años son: ", cont16, "<br>");
+document.write("De 17 años son: ", cont17, "<br>");
+document.write("De 18 años son: ", cont18, "<br>");
+document.write("De 19 años son: ", cont19, "<br>");
+document.write("De 20 años son: ", cont20, "<br>");
+document.write("De 21 años son: ", cont21, "<br>");
+document.write("De 22 años son: ", cont22, "<br>");
+document.write("De 23 años son: ", cont23, "<br>");
+document.write("De 24 años son: ", cont24, "<br>");
+document.write("De 25 a 29 años son: ", cont2529, "<br>");
+document.write("De 30 a 34 años son: ", cont3034, "<br>");
+document.write("De 35 a 39 años son: ", cont3539, "<br>");
+document.write("De 40 a 44 años son: ", cont4044, "<br>");
+document.write("De 45 a 49 años son: ", cont4549, "<br>");
+document.write("De 50 a 54 años son: ", cont5054, "<br>");
+document.write("De 55 años son: ", cont55, "<br>");
+
+</script>
