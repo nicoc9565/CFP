@@ -2,6 +2,9 @@
 
 var edad;
 var sexo, masculino, femenino, estudios;
+var curso
+
+curso = prompt ("Ingrese el nombre del Curso");
 
 //Contador de Sexos
 contm=0
@@ -41,15 +44,15 @@ do {
     edad = parseInt(prompt ("Ingrese la Edad"));
     estudios = prompt ("Ingrese Nivel de Estudio");
 
-    if (sexo == "m") {
+    if (sexo == "h") {
         contm++
 		total++
-    } else if (sexo == "f") {
+    } else if (sexo == "m") {
         contf++
 		total++
     }
 
-    if (estudios == "p") {
+   if (estudios == "p") {
         contP++
     }else if (estudios == "s") {
         contS++
@@ -93,16 +96,25 @@ do {
 
 } while (sexo!="n");
 
+document.write("-------", curso, " --------", "<br>");
+document.write(" ", "<br>");
+document.write(" ", "<br>");
+
+document.write("--------- Sexos --------- <br>");
 //Resultados de Sexos
 document.write("La cantidad de Masculino son: ", contm, "<br>");
 document.write("La cantidad de Femenino son: ", contf, "<br>");
 document.write("La cantidad de Total son: ", total, "<br>");
 
+document.write(" ", "<br>");
+document.write("---------- Estudios ---------- <br>");
 //Resultados de Estudios
 document.write("La cantidad de Alumnos con Estudios Primarios son: ", contP, "<br>");
 document.write("La cantidad de Alumnos con Estudios Secundarios son: ", contS, "<br>");
 document.write("La cantidad de Alumnos sin Estudios son: ", contN, "<br>");
 
+document.write(" ", "<br>");
+document.write("----------- Edades -----------<br>");
 //Resultados de Edades
 document.write("De 16 años son: ", cont16, "<br>");
 document.write("De 17 años son: ", cont17, "<br>");
